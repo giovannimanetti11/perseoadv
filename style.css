@@ -1,0 +1,54 @@
+.perseo-adv-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%;
+}
+
+.perseo-adv-product {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    max-width: 100%;
+}
+
+.perseo-adv-product-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perseo-adv-product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perseo-adv-product-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.perseo-adv-product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.perseo-adv-product-cta a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.perseo-adv-product-cta a:hover {
+    background-color: #45a049;
+}
