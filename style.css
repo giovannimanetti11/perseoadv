@@ -52,3 +52,35 @@
 .perseo-adv-product-cta a:hover {
     background-color: #45a049;
 }
+
+.adv-products-container {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.adv-products-container iframe {
+    margin-right: 15px;
+}
+
+/*
+*
+* Media Queries
+*
+*/
+
+@media only screen and (max-width: 600px) {
+
+    .adv-products-container {
+        margin-bottom: 20px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adv-products-container iframe {
+        margin-bottom: 15px;
+    }
+
+}
