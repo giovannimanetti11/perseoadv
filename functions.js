@@ -4,23 +4,23 @@ document.addEventListener('DOMContentLoaded', function() {
         if (section9) {
             moveAdvProductsContainer(section9);
         }
-    }, 500); // Ritarda l'esecuzione del tuo script di 500 millisecondi (0.5 secondi)
+    }, 500); 
 });
 
 function findSection9ByText() {
     var contentElement = document.querySelector('.post-content-text');
     var h3Elements = contentElement.querySelectorAll('h3');
-    var searchText = "Sovradosaggio/Effetti indesiderati";
     var foundElement;
 
-    h3Elements.forEach(function(element) {
-        if (element.textContent === searchText) {
-            foundElement = element;
-        }
-    });
+    if (h3Elements.length > 8) { // Se ci sono almeno 9 elementi <h3>
+        foundElement = h3Elements[8]; // Prende il nono elemento (indice 8)
+    }
 
     return foundElement;
 }
+
+
+
 
 function moveAdvProductsContainer(section9) {
     var advProductsContainer = document.querySelector('.adv-products-container');
