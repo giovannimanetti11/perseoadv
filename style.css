@@ -75,12 +75,14 @@
     .adv-products-container {
         margin-bottom: 20px;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .adv-products-container iframe {
         margin-bottom: 15px;
+        margin-right: 5px;
     }
 
 }

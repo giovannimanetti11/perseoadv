@@ -12,8 +12,8 @@ function findSection9ByText() {
     var h3Elements = contentElement.querySelectorAll('h3');
     var foundElement;
 
-    if (h3Elements.length > 8) { // Se ci sono almeno 9 elementi <h3>
-        foundElement = h3Elements[8]; // Prende il nono elemento (indice 8)
+    if (h3Elements.length > 9) { // Se ci sono almeno 10 elementi <h3>
+        foundElement = h3Elements[9]; // Prende il decimo elemento (indice 9)
     }
 
     return foundElement;
